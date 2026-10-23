@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Plus+Jakarta+Sans:wght@400..800&display=swap');
+@import "tailwindcss";
+
+/* New palette: deep emerald ink + saffron + warm ivory.
+   Token names are unchanged, so every existing page re-themes automatically. */
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-serif: "Fraunces", Georgia, serif;
+
+  --color-brand-navy: #0b3b32;
+  --color-brand-gold: #f2a33a;
+  --color-brand-gold-light: #ffc873;
+  --color-brand-cream: #faf6ee;
+  --color-ink: #10231f;
+
+  --animate-marquee: marquee 30s linear infinite;
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-brand-cream text-ink font-sans antialiased; overflow-x: hidden; }
+  h1, h2, h3, h4, h5, h6 { @apply font-display tracking-tight; font-variation-settings: "opsz" 96; }
+  img { @apply max-w-full; }
+  :focus-visible { outline: 2px solid var(--color-brand-gold); outline-offset: 3px; border-radius: 6px; }
+}
+
+.glass { @apply bg-white/75 backdrop-blur-xl border border-white/40; }
+.text-gradient { @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-navy via-brand-gold to-brand-navy; }
+.section-padding { padding: clamp(3.5rem, 8vw, 7rem) clamp(1.25rem, 5vw, 6rem); }
+.grain::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/></filter><rect width='120' height='120' filter='url(%23n)'/></svg>"); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+.rv { opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1); }
+.rv.in { opacity: 1; transform: none; }
+
+/* ---- content protection (class is added only in production by SiteGuard) ---- */
+.protect body { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.protect input, .protect textarea, .protect select, .protect [contenteditable="true"] { -webkit-user-select: text; user-select: text; }
+.protect img { -webkit-user-drag: none; pointer-events: none; }
+.guard-on #root { filter: blur(28px) saturate(.5); pointer-events: none; }
+@media print { html.protect { display: none !important; } }
+
+/* ---- ambient background (bubbles) ---- */
+@keyframes amb-drift { 0% { transform: translate3d(0,0,0) scale(1); } 50% { transform: translate3d(50px,-70px,0) scale(1.14); } 100% { transform: translate3d(-40px,40px,0) scale(.92); } }
+@keyframes amb-rise { 0% { transform: translate3d(0,0,0) scale(.6); opacity: 0; } 10% { opacity: .95; } 50% { transform: translate3d(var(--sway),-60vh,0) scale(1); } 90% { opacity: .95; } 100% { transform: translate3d(calc(var(--sway) * -1),-118vh,0) scale(1.1); opacity: 0; } }
+.amb-orb { animation: amb-drift 28s ease-in-out infinite alternate; will-change: transform; }
+.amb-bubble { border: 1px solid rgba(255,255,255,.75); box-shadow: inset 0 0 14px rgba(255,255,255,.65), 0 6px 22px rgba(11,59,50,.08); animation: amb-rise 24s linear infinite; will-change: transform, opacity; }
+
+/* let the background show through light sections (cards stay solid) */
+main section[class*="bg-white"], main section[class*="bg-slate-50"], main section[class*="bg-gray-50"], main > div[class*="bg-white"] { background-color: rgb(255 255 255 / .62) !important; }
+main section[class*="bg-brand-cream"], main > div[class*="bg-brand-cream"] { background-color: transparent !important; }
