@@ -10,8 +10,9 @@ import { Lock } from 'lucide-react';
  */
 const isField = (t: EventTarget | null) => t instanceof HTMLElement && !!t.closest('input, textarea, select, [contenteditable="true"]');
 
-const WATERMARK = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='220'><text x='160' y='110' text-anchor='middle' transform='rotate(-24 160 110)' font-family='Arial,sans-serif' font-size='17' font-weight='700' letter-spacing='2' fill='%230b3b32' fill-opacity='0.09'>DPS BAKHTIYARPUR</text></svg>")`;
+// const WATERMARK = `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='220'><text x='160' y='110' text-anchor='middle' transform='rotate(-24 160 110)' font-family='Arial,sans-serif' font-size='17' font-weight='700' letter-spacing='2' fill='%230b3b32' fill-opacity='0.09'>DPS BAKHTIYARPUR</text></svg>")`;
 
+const WATERMARK = '';
 const guardOn = () => import.meta.env.PROD || new URLSearchParams(window.location.search).has('guard'); // add ?guard=1 to test while developing
 
 const SiteGuard = () => {
