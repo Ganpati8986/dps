@@ -266,7 +266,7 @@ const Navbar = () => {
               className="hidden min-[1024px]:inline-flex items-center gap-1.5 rounded-full border border-brand-navy/15 px-3 py-2 text-[12px] font-semibold text-brand-navy transition hover:bg-brand-navy hover:text-white"
             >
               <LogIn className="h-4 w-4" />
-              <span>ERP Login</span>
+              <span>Login</span>
             </a>
 
             {/* Apply Now */}
