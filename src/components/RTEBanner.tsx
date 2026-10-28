@@ -180,12 +180,12 @@ const RTEBanner = () => {
                 {language === 'english' ? (
                   <>
                     Free Education for Your Child at{' '}
-                    <span className="text-blue-900">Delhi Public School</span>
+                    <span className="text-blue-900">Dehli Public School</span>
                   </>
                 ) : (
                   <>
                     अपने बच्चे के लिए{' '}
-                    <span className="text-blue-600">दिल्ली पब्लिक स्कूल</span>{' '}
+                    <span className="text-blue-600">देहली पब्लिक स्कूल</span>{' '}
                     में निःशुल्क शिक्षा
                   </>
                 )}

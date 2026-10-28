@@ -208,7 +208,7 @@ const Navbar = () => {
               </span>
 
               <span className="block text-[9px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
-                Delhi Public School
+                Dehli Public School
               </span>
             </span>
           </Link>
