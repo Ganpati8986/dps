@@ -49,7 +49,7 @@ const Hero = () => {
   const yB = useTransform(scrollY, [0, 600], [0, reduce ? 0 : 50]);
 
   const words = (en ? 'Where curious minds grow into confident leaders' : 'जहाँ जिज्ञासु मन आत्मविश्वासी नेता बनते हैं').split(' ');
-  const stats = [['500+', en ? 'Students' : 'छात्र'], ['20+', en ? 'Faculty' : 'शिक्षक'], ['Pre-Nursery–10', en ? 'Classes' : 'कक्षाएं']];
+  const stats = [['500+', en ? 'Students' : 'छात्र'], ['20+', en ? 'Faculty' : 'शिक्षक'], ['I–VIII', en ? 'Classes' : 'कक्षाएं']];
 
   return (
     <section data-hero className="grain relative isolate overflow-hidden bg-brand-cream pb-16 pt-28 sm:pt-32 lg:pb-24 lg:pt-36">
