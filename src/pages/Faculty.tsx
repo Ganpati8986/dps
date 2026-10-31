@@ -30,7 +30,7 @@ const Faculty = () => {
       name: language === 'english' ? 'Mr. Nishant Kumar Pankaj' : 'निशांत कुमार पंकज',
       designation: language === 'english' ? 'Director' : 'डायरेक्टर',
       department: language === 'english' ? 'Administration' : 'प्रशासन',
-      qualification: 'M.A., B.Ed.',
+      qualification: 'M.SC,D.EL.Ed ',
       experience: 'N K',
       image: direc,
       bio: language === 'english'
@@ -147,17 +147,17 @@ const Faculty = () => {
     //     ? 'Dedicated to providing quality education and building strong academic foundations for students.'
     //     : 'छात्रों को गुणवत्तापूर्ण शिक्षा प्रदान करने और मजबूत शैक्षणिक आधार विकसित करने के लिए समर्पित।',
     // },
-    {
-      name: language === 'english' ? 'Ms. Suhani Kumari' : 'सुश्री सुहानी कुमारी',
-      designation: language === 'english' ? 'Teacher' : 'शिक्षिका',
-      department: language === 'english' ? 'General Education' : 'सामान्य शिक्षा',
-      qualification: 'Graduation',
-      experience: 'S.K.',
-      image: st10,
-      bio: language === 'english'
-        ? 'Passionate about guiding students towards academic excellence and overall personality development.'
-        : 'छात्रों को शैक्षणिक उत्कृष्टता और व्यक्तित्व विकास की ओर मार्गदर्शन करने के प्रति उत्साही।',
-    },
+    // {
+    //   name: language === 'english' ? 'Ms. Suhani Kumari' : 'सुश्री सुहानी कुमारी',
+    //   designation: language === 'english' ? 'Teacher' : 'शिक्षिका',
+    //   department: language === 'english' ? 'General Education' : 'सामान्य शिक्षा',
+    //   qualification: 'Graduation',
+    //   experience: 'S.K.',
+    //   image: st10,
+    //   bio: language === 'english'
+    //     ? 'Passionate about guiding students towards academic excellence and overall personality development.'
+    //     : 'छात्रों को शैक्षणिक उत्कृष्टता और व्यक्तित्व विकास की ओर मार्गदर्शन करने के प्रति उत्साही।',
+    // },
     {
       name: language === 'english' ? 'Mr. RANVEER HARSH VARDHAN' : 'सुश्री शबीना परवीन',
       designation: language === 'english' ? 'Teacher' : 'शिक्षक',
