@@ -37,17 +37,17 @@ const Faculty = () => {
         ? 'Visionary leader committed to educational excellence.'
         : 'शैक्षणिक उत्कृष्टता के लिए प्रतिबद्ध दूरदर्शी नेता।',
     },
-    {
-      name: language === 'english' ? 'Dr. Vivek Vardhan' : 'डॉ. विवेक वर्धन',
-      designation: language === 'english' ? 'Principal' : 'प्रिंसिपल',
-      department: language === 'english' ? 'Administration' : 'प्रशासन',
-      qualification: 'Ph.D.',
-      experience: 'V K',
-      image: prin,
-      bio: language === 'english'
-        ? 'Expert in academic administration and student development.'
-        : 'शैक्षणिक प्रशासन और छात्र विकास में विशेषज्ञ।',
-    },
+    // {
+    //   name: language === 'english' ? 'Dr. Vivek Vardhan' : 'डॉ. विवेक वर्धन',
+    //   designation: language === 'english' ? 'Principal' : 'प्रिंसिपल',
+    //   department: language === 'english' ? 'Administration' : 'प्रशासन',
+    //   qualification: 'Ph.D.',
+    //   experience: 'V K',
+    //   image: prin,
+    //   bio: language === 'english'
+    //     ? 'Expert in academic administration and student development.'
+    //     : 'शैक्षणिक प्रशासन और छात्र विकास में विशेषज्ञ।',
+    // },
     {
       name: language === 'english' ? 'Mr. Manish Kumar ' : 'श्री मनीष कुमार',
       designation: language === 'english' ? 'Teacher' : 'शिक्षक',
@@ -114,17 +114,17 @@ const Faculty = () => {
         ? 'Focused on foundational learning for young students.'
         : 'छोटे बच्चों की बुनियादी शिक्षा पर ध्यान केंद्रित।',
     },
-    {
-      name: language === 'english' ? 'Ms. Lucky Kumari' : 'सुश्री लकी कुमारी',
-      designation: language === 'english' ? 'Teacher' : 'शिक्षिका',
-      department: language === 'english' ? 'Computer Science' : 'कंप्यूटर विज्ञान',
-      qualification: 'Diploma in Engineering',
-      experience: 'L K',
-      image: st6,
-      bio: language === 'english'
-        ? 'Helping students build technical skills.'
-        : 'छात्रों को तकनीकी कौशल विकसित करने में सहायता।',
-    },
+    // {
+    //   name: language === 'english' ? 'Ms. Lucky Kumari' : 'सुश्री लकी कुमारी',
+    //   designation: language === 'english' ? 'Teacher' : 'शिक्षिका',
+    //   department: language === 'english' ? 'Computer Science' : 'कंप्यूटर विज्ञान',
+    //   qualification: 'Diploma in Engineering',
+    //   experience: 'L K',
+    //   image: st6,
+    //   bio: language === 'english'
+    //     ? 'Helping students build technical skills.'
+    //     : 'छात्रों को तकनीकी कौशल विकसित करने में सहायता।',
+    // },
     {
       name: language === 'english' ? 'Ms. Priya Rai' : 'सुश्री प्रिया राय',
       designation: language === 'english' ? 'Teacher' : 'शिक्षिका',
@@ -136,17 +136,17 @@ const Faculty = () => {
         ? 'Encouraging digital literacy among students.'
         : 'छात्रों में डिजिटल साक्षरता को बढ़ावा देना।',
     },
-    {
-      name: language === 'english' ? 'Ms. Fariya Praveen' : 'सुश्री फरिया परवीन',
-      designation: language === 'english' ? 'Teacher' : 'शिक्षिका',
-      department: language === 'english' ? 'General Education' : 'सामान्य शिक्षा',
-      qualification: 'Graduation',
-      experience: 'F.P.',
-      image: st9,
-      bio: language === 'english'
-        ? 'Dedicated to providing quality education and building strong academic foundations for students.'
-        : 'छात्रों को गुणवत्तापूर्ण शिक्षा प्रदान करने और मजबूत शैक्षणिक आधार विकसित करने के लिए समर्पित।',
-    },
+    // {
+    //   name: language === 'english' ? 'Ms. Fariya Praveen' : 'सुश्री फरिया परवीन',
+    //   designation: language === 'english' ? 'Teacher' : 'शिक्षिका',
+    //   department: language === 'english' ? 'General Education' : 'सामान्य शिक्षा',
+    //   qualification: 'Graduation',
+    //   experience: 'F.P.',
+    //   image: st9,
+    //   bio: language === 'english'
+    //     ? 'Dedicated to providing quality education and building strong academic foundations for students.'
+    //     : 'छात्रों को गुणवत्तापूर्ण शिक्षा प्रदान करने और मजबूत शैक्षणिक आधार विकसित करने के लिए समर्पित।',
+    // },
     {
       name: language === 'english' ? 'Ms. Suhani Kumari' : 'सुश्री सुहानी कुमारी',
       designation: language === 'english' ? 'Teacher' : 'शिक्षिका',

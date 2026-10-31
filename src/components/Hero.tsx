@@ -115,7 +115,7 @@ const Hero = () => {
           <motion.div initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 1.3, type: 'spring' }}
             className="absolute -bottom-5 right-4 flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-xl ring-1 ring-black/5">
             <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-gold/20 font-display text-lg font-bold text-brand-navy">★</span>
-            <span className="text-xs leading-tight"><b className="block text-sm text-brand-navy">{en ? 'Caring & Modern' : 'स्नेही और आधुनिक'}</b><span className="text-ink/60">{en ? 'Pre-Nursery to Class 10' : 'प्री-नर्सरी से कक्षा 10'}</span></span>
+            <span className="text-xs leading-tight"><b className="block text-sm text-brand-navy">{en ? 'Caring & Modern' : 'स्नेही और आधुनिक'}</b><span className="text-ink/60">{en ? 'Class 1 to VIII' : 'कक्षा 1 से 8वीं'}</span></span>
           </motion.div>
         </div>
       </div>

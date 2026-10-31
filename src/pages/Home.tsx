@@ -412,7 +412,7 @@ const Home = () => {
             </h2>
             <p className="text-xs sm:text-base lg:text-lg text-brand-navy/70 mb-4 sm:mb-8 leading-relaxed">
               {language === 'english'
-                ? 'DPS Bakhtiyarpur is a private school offering quality education from Pre-Nursery to Class 10. We focus on holistic development, combining academic excellence with strong values and character building.'
+                ? 'DPS Bakhtiyarpur is a private school offering quality education from I to Class VIII. We focus on holistic development, combining academic excellence with strong values and character building.'
                 : 'DPS बख्तियारपुर एक निजी विद्यालय है, जो प्री-नर्सरी से कक्षा 10 तक गुणवत्तापूर्ण शिक्षा प्रदान करता है। हम शैक्षणिक उत्कृष्टता के साथ-साथ नैतिक मूल्यों और व्यक्तित्व विकास पर भी विशेष ध्यान देते हैं।'}
             </p>
             <Link to="/about" className="bg-brand-navy text-white px-4 sm:px-6 lg:px-10 py-2 sm:py-3 lg:py-4 rounded-full font-bold hover:bg-brand-gold hover:text-brand-navy transition-all shadow-xl inline-block text-xs sm:text-sm lg:text-base">
